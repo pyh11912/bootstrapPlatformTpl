@@ -1,610 +1,655 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SpaceLab</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <!-- Fonts from Font Awsome -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <!-- CSS Animate -->
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <!-- Custom styles for this theme -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- Fonts -->
-    <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
-    <!-- Feature detection -->
-    <script src="assets/js/modernizr-2.6.2.min.js"></script>
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.js"></script>
-    <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-    <section id="container">
-        <header id="header">
-            <!--logo start-->
-            <div class="brand">
-                <a href="index.html" class="logo">
-                    <span>Space</span>Lab</a>
-            </div>
-            <!--logo end-->
-            <div class="toggle-navigation toggle-left">
-                <button type="button" class="btn btn-default" id="toggle-left" data-toggle="tooltip" data-placement="right" title="Toggle Navigation">
-                    <i class="fa fa-bars"></i>
-                </button>
-            </div>
-            <div class="user-nav">
-                <ul>
-                    <li class="dropdown messages">
-                        <span class="badge badge-danager animated bounceIn" id="new-messages">5</span>
-                        <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-mail" data-toggle="dropdown">
-                            <i class="fa fa-envelope"></i>
-                        </button>
-                        <ul class="dropdown-menu alert animated fadeInDown">
-                            <li>
-                                <h1>You have
-                                    <strong>5</strong>new messages</h1>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="profile-photo">
-                                        <img src="assets/img/avatar.gif" alt="" class="img-circle">
-                                    </div>
-                                    <div class="message-info">
-                                        <span class="sender">James Bagian</span>
-                                        <span class="time">30 mins</span>
-                                        <div class="message-content">Lorem ipsum dolor sit amet, elit rutrum felis sed erat augue fusce...</div>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <div class="profile-photo">
-                                        <img src="assets/img/avatar1.gif" alt="" class="img-circle">
-                                    </div>
-                                    <div class="message-info">
-                                        <span class="sender">Jeffrey Ashby</span>
-                                        <span class="time">2 hour</span>
-                                        <div class="message-content">hendrerit pellentesque, iure tincidunt, faucibus vitae dolor aliquam...</div>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <div class="profile-photo">
-                                        <img src="assets/img/avatar2.gif" alt="" class="img-circle">
-                                    </div>
-                                    <div class="message-info">
-                                        <span class="sender">John Douey</span>
-                                        <span class="time">3 hours</span>
-                                        <div class="message-content">Penatibus suspendisse sit pellentesque eu accumsan condimentum nec...</div>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <div class="profile-photo">
-                                        <img src="assets/img/avatar3.gif" alt="" class="img-circle">
-                                    </div>
-                                    <div class="message-info">
-                                        <span class="sender">Ellen Baker</span>
-                                        <span class="time">7 hours</span>
-                                        <div class="message-content">Sem dapibus in, orci bibendum faucibus tellus, justo arcu...</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="profile-photo">
-                                        <img src="assets/img/avatar4.gif" alt="" class="img-circle">
-                                    </div>
-                                    <div class="message-info">
-                                        <span class="sender">Ivan Bella</span>
-                                        <span class="time">6 hours</span>
-                                        <div class="message-content">Curabitur metus faucibus sapien elit, ante molestie sapien...</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li><a href="#">Check all messages <i class="fa fa-angle-right"></i></a>
-                            </li>
-                        </ul>
-
+<html lang="en">
+    <head>        
+        <!-- META SECTION -->
+        <title>Joli Admin - Responsive Bootstrap Admin Template</title>            
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <!-- END META SECTION -->
+        
+        <!-- CSS INCLUDE -->        
+        <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
+        <!-- EOF CSS INCLUDE -->                                             
+    </head>
+    <body>
+        <!-- START PAGE CONTAINER -->
+        <div class="page-container">
+            
+            <!-- START PAGE SIDEBAR -->
+            <div class="page-sidebar">
+                <!-- START X-NAVIGATION -->
+                <ul class="x-navigation">
+                    <li class="xn-logo">
+                        <a href="index.html">Joli Admin</a>
+                        <a href="#" class="x-navigation-control"></a>
                     </li>
-                    <li class="profile-photo">
-                        <img src="assets/img/avatar.png" alt="" class="img-circle">
+                    <li class="xn-profile">
+                        <a href="#" class="profile-mini">
+                            <img src="assets/images/users/avatar.jpg" alt="John Doe"/>
+                        </a>
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src="assets/images/users/avatar.jpg" alt="John Doe"/>
+                            </div>
+                            <div class="profile-data">
+                                <div class="profile-data-name">John Doe</div>
+                                <div class="profile-data-title">Web Developer/Designer</div>
+                            </div>
+                            <div class="profile-controls">
+                                <a href="pages-profile.html" class="profile-control-left"><span class="fa fa-info"></span></a>
+                                <a href="pages-messages.html" class="profile-control-right"><span class="fa fa-envelope"></span></a>
+                            </div>
+                        </div>                                                                        
                     </li>
-                    <li class="dropdown settings">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                      Mike Adams <i class="fa fa-angle-down"></i>
-                    </a>
-                        <ul class="dropdown-menu animated fadeInDown">
-                            <li>
-                                <a href="#"><i class="fa fa-user"></i> Profile</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-calendar"></i> Calendar</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge badge-danager" id="user-inbox">5</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-power-off"></i> Logout</a>
-                            </li>
-                        </ul>
-                    </li>
+                    <li class="xn-title">Navigation</li>                    
                     <li>
-                        <div class="toggle-navigation toggle-right">
-                            <button type="button" class="btn btn-default" id="toggle-right">
-                                <i class="fa fa-comment"></i>
-                            </button>
-                        </div>
+                        <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
                     </li>
-
-                </ul>
-            </div>
-        </header>
-        <!--sidebar start-->
-        <aside class="sidebar">
-            <div id="leftside-navigation" class="nano">
-                <ul class="nano-content">
+                    <li class="xn-openable">
+                        <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Pages</span></a>
+                        <ul>
+                            <li><a href="pages-gallery.html"><span class="fa fa-image"></span> Gallery</a></li>
+                            <li><a href="pages-profile.html"><span class="fa fa-user"></span> Profile</a></li>
+                            <li><a href="pages-address-book.html"><span class="fa fa-users"></span> Address Book</a></li>
+                            <li class="xn-openable">
+                                <a href="#"><span class="fa fa-clock-o"></span> Timeline</a>
+                                <ul>
+                                    <li><a href="pages-timeline.html"><span class="fa fa-align-center"></span> Default</a></li>
+                                    <li><a href="pages-timeline-simple.html"><span class="fa fa-align-justify"></span> Full Width</a></li>
+                                </ul>
+                            </li>
+                            <li class="xn-openable">
+                                <a href="#"><span class="fa fa-envelope"></span> Mailbox</a>
+                                <ul>
+                                    <li><a href="pages-mailbox-inbox.html"><span class="fa fa-inbox"></span> Inbox</a></li>
+                                    <li><a href="pages-mailbox-message.html"><span class="fa fa-file-text"></span> Message</a></li>
+                                    <li><a href="pages-mailbox-compose.html"><span class="fa fa-pencil"></span> Compose</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="pages-messages.html"><span class="fa fa-comments"></span> Messages</a></li>
+                            <li><a href="pages-calendar.html"><span class="fa fa-calendar"></span> Calendar</a></li>
+                            <li><a href="pages-tasks.html"><span class="fa fa-edit"></span> Tasks</a></li>
+                            <li><a href="pages-content-table.html"><span class="fa fa-columns"></span> Content Table</a></li>
+                            <li><a href="pages-faq.html"><span class="fa fa-question-circle"></span> FAQ</a></li>
+                            <li><a href="pages-search.html"><span class="fa fa-search"></span> Search</a></li>
+                            <li class="xn-openable">
+                                <a href="#"><span class="fa fa-file"></span> Blog</a>
+                                
+                                <ul>                                    
+                                    <li><a href="pages-blog-list.html"><span class="fa fa-copy"></span> List of Posts</a></li>
+                                    <li><a href="pages-blog-post.html"><span class="fa fa-file-o"></span>Single Post</a></li>
+                                </ul>
+                            </li>
+                            <li class="xn-openable">
+                                <a href="#"><span class="fa fa-sign-in"></span> Login</a>
+                                <ul>                                    
+                                    <li><a href="pages-login.html">App Login</a></li>
+                                    <li><a href="pages-login-website.html">Website Login</a></li>
+                                    <li><a href="pages-login-website-light.html"> Website Login Light</a></li>
+                                </ul>
+                            </li>                            
+                            <li class="xn-openable">
+                                <a href="#"><span class="fa fa-warning"></span> Error Pages</a>
+                                <ul>                                    
+                                    <li><a href="pages-error-404.html">Error 404 Sample 1</a></li>
+                                    <li><a href="pages-error-404-2.html">Error 404 Sample 2</a></li>
+                                    <li><a href="pages-error-500.html"> Error 500</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="xn-openable">
+                        <a href="#"><span class="fa fa-file-text-o"></span> <span class="xn-text">Layouts</span></a>
+                        <ul>
+                            <li><a href="layout-boxed.html">Boxed</a></li>
+                            <li><a href="layout-nav-toggled.html">Navigation Toggled</a></li>
+                            <li><a href="layout-nav-top.html">Navigation Top</a></li>
+                            <li><a href="layout-nav-right.html">Navigation Right</a></li>
+                            <li><a href="layout-nav-top-fixed.html">Top Navigation Fixed</a></li>                            
+                            <li><a href="layout-nav-custom.html">Custom Navigation</a></li>
+                            <li><a href="layout-frame-left.html">Frame Left Column</a></li>
+                            <li><a href="layout-frame-right.html">Frame Right Column</a></li>
+                            <li><a href="layout-search-left.html">Search Left Side</a></li>  
+                            <li><a href="blank.html">Blank Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="xn-title">Components</li>                    
+                    <li class="xn-openable active">
+                        <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">UI Kits</span></a>
+                        <ul>
+                            <li><a href="ui-widgets.html"><span class="fa fa-heart"></span> Widgets</a></li>                            
+                            <li><a href="ui-elements.html"><span class="fa fa-cogs"></span> Elements</a></li>
+                            <li><a href="ui-buttons.html"><span class="fa fa-square-o"></span> Buttons</a></li>                            
+                            <li class="active"><a href="ui-panels.html"><span class="fa fa-pencil-square-o"></span> Panels</a></li>
+                            <li><a href="ui-icons.html"><span class="fa fa-magic"></span> Icons</a><div class="informer informer-warning">+679</div></li>
+                            <li><a href="ui-typography.html"><span class="fa fa-pencil"></span> Typography</a></li>
+                            <li><a href="ui-portlet.html"><span class="fa fa-th"></span> Portlet</a></li>
+                            <li><a href="ui-sliders.html"><span class="fa fa-arrows-h"></span> Sliders</a></li>
+                            <li><a href="ui-alerts-popups.html"><span class="fa fa-warning"></span> Alerts & Popups</a></li>                            
+                            <li><a href="ui-lists.html"><span class="fa fa-list-ul"></span> Lists</a></li>
+                            <li><a href="ui-tour.html"><span class="fa fa-random"></span> Tour</a></li>
+                        </ul>
+                    </li>                    
+                    <li class="xn-openable">
+                        <a href="#"><span class="fa fa-pencil"></span> <span class="xn-text">Forms</span></a>
+                        <ul>
+                            <li>
+                                <a href="form-layouts-two-column.html"><span class="fa fa-tasks"></span> Form Layouts</a>
+                                <div class="informer informer-danger">New</div>
+                                <ul>
+                                    <li><a href="form-layouts-one-column.html"><span class="fa fa-align-justify"></span> One Column</a></li>
+                                    <li><a href="form-layouts-two-column.html"><span class="fa fa-th-large"></span> Two Column</a></li>
+                                    <li><a href="form-layouts-tabbed.html"><span class="fa fa-table"></span> Tabbed</a></li>
+                                    <li><a href="form-layouts-separated.html"><span class="fa fa-th-list"></span> Separated Rows</a></li>
+                                </ul> 
+                            </li>
+                            <li><a href="form-elements.html"><span class="fa fa-file-text-o"></span> Elements</a></li>
+                            <li><a href="form-validation.html"><span class="fa fa-list-alt"></span> Validation</a></li>
+                            <li><a href="form-wizards.html"><span class="fa fa-arrow-right"></span> Wizards</a></li>
+                            <li><a href="form-editors.html"><span class="fa fa-text-width"></span> WYSIWYG Editors</a></li>
+                            <li><a href="form-file-handling.html"><span class="fa fa-floppy-o"></span> File Handling</a></li>
+                        </ul>
+                    </li>
+                    <li class="xn-openable">
+                        <a href="tables.html"><span class="fa fa-table"></span> <span class="xn-text">Tables</span></a>
+                        <ul>                            
+                            <li><a href="table-basic.html"><span class="fa fa-align-justify"></span> Basic</a></li>
+                            <li><a href="table-datatables.html"><span class="fa fa-sort-alpha-desc"></span> Data Tables</a></li>
+                            <li><a href="table-export.html"><span class="fa fa-download"></span> Export Tables</a></li>                            
+                        </ul>
+                    </li>
+                    <li class="xn-openable">
+                        <a href="#"><span class="fa fa-bar-chart-o"></span> <span class="xn-text">Charts</span></a>
+                        <ul>
+                            <li><a href="charts-morris.html"><span class="xn-text">Morris</span></a></li>
+                            <li><a href="charts-nvd3.html"><span class="xn-text">NVD3</span></a></li>
+                            <li><a href="charts-rickshaw.html"><span class="xn-text">Rickshaw</span></a></li>
+                            <li><a href="charts-other.html"><span class="xn-text">Other</span></a></li>
+                        </ul>
+                    </li>             
                     <li>
-                        <a href="index.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
-                    </li>
-                    <li class="sub-menu active">
-                        <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>UI Elements</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                        <ul>
-
-                            <li><a href="ui-alerts-notifications.html">Alerts &amp; Notifications</a>
-                            </li>
-                            <li class="active"><a href="ui-panels.html">Panels</a>
-                            </li>
-                            <li><a href="ui-buttons.html">Buttons</a>
-                            </li>
-                            <li><a href="ui-slider-progress.html">Sliders &amp; Progress</a>
-                            </li>
-                            <li><a href="ui-modals-popups.html">Modals &amp; Popups</a>
-                            </li>
-                            <li><a href="ui-icons.html">Icons</a>
-                            </li>
-                            <li><a href="ui-grid.html">Grid</a>
-                            </li>
-                            <li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a>
-                            </li>
-                            <li><a href="ui-nestable-list.html">Nestable Lists</a>
-                            </li>
+                        <a href="maps.html"><span class="fa fa-map-marker"></span> <span class="xn-text">Maps</span></a>
+                    </li>                    
+                    <li class="xn-openable">
+                        <a href="#"><span class="fa fa-sitemap"></span> <span class="xn-text">Navigation Levels</span></a>
+                        <ul>                            
+                            <li class="xn-openable">
+                                <a href="#">Second Level</a>
+                                <ul>
+                                    <li class="xn-openable">
+                                        <a href="#">Third Level</a>
+                                        <ul>
+                                            <li class="xn-openable">
+                                                <a href="#">Fourth Level</a>
+                                                <ul>
+                                                    <li><a href="#">Fifth Level</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>                            
                         </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa-table"></i><span>Tables</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                        <ul>
-                            <li><a href="tables-basic.html">Basic Tables</a>
-                            </li>
-                            <li><a href="tables-data.html">Data Tables</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa fa-tasks"></i><span>Forms</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                        <ul>
-                            <li><a href="forms-components.html">Components</a>
-                            </li>
-                            <li><a href="forms-validation.html">Validation</a>
-                            </li>
-                            <li><a href="forms-mask.html">Mask</a>
-                            </li>
-                            <li><a href="forms-wizard.html">Wizard</a>
-                            </li>
-                            <li><a href="forms-multiple-file.html">Multiple File Upload</a>
-                            </li>
-                            <li><a href="forms-wysiwyg.html">WYSIWYG Editor</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa-envelope"></i><span>Mail</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                        <ul>
-                            <li><a href="mail-inbox.html">Inbox</a>
-                            </li>
-                            <li><a href="mail-compose.html">Compose Mail</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa-bar-chart-o"></i><span>Charts</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                        <ul>
-                            <li><a href="charts-chartjs.html">Chartjs</a>
-                            </li>
-                            <li><a href="charts-morris.html">Morris</a>
-                            </li>
-                            <li><a href="charts-c3.html">C3 Charts</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa-map-marker"></i><span>Maps</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                        <ul>
-                            <li><a href="map-google.html">Google Map</a>
-                            </li>
-                            <li><a href="map-vector.html">Vector Map</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="typography.html"><i class="fa fa-text-height"></i><span>Typography</span></a>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa-file"></i><span>Pages</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                        <ul>
-                            <li><a href="pages-blank.html">Blank Page</a>
-                            </li>
-                            <li><a href="pages-login.html">Login</a>
-                            </li>
-                            <li><a href="pages-sign-up.html">Sign Up</a>
-                            </li>
-                            <li><a href="pages-calendar.html">Calendar</a>
-                            </li>
-                            <li><a href="pages-timeline.html">Timeline</a>
-                            </li>
-                            <li><a href="pages-404.html">404</a>
-                            </li>
-                            <li><a href="pages-500.html">500</a>
-                            </li>
-                        </ul>
-                    </li>
+                    </li>                    
                 </ul>
+                <!-- END X-NAVIGATION -->
             </div>
+            <!-- END PAGE SIDEBAR -->
+            
+            <!-- PAGE CONTENT -->
+            <div class="page-content">
+                
+                <!-- START X-NAVIGATION VERTICAL -->
+                <ul class="x-navigation x-navigation-horizontal x-navigation-panel">
+                    <!-- TOGGLE NAVIGATION -->
+                    <li class="xn-icon-button">
+                        <a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a>
+                    </li>
+                    <!-- END TOGGLE NAVIGATION -->
+                    <!-- SEARCH -->
+                    <li class="xn-search">
+                        <form role="form">
+                            <input type="text" name="search" placeholder="Search..."/>
+                        </form>
+                    </li>   
+                    <!-- END SEARCH -->
+                    <!-- SIGN OUT -->
+                    <li class="xn-icon-button pull-right">
+                        <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>                        
+                    </li> 
+                    <!-- END SIGN OUT -->
+                    <!-- MESSAGES -->
+                    <li class="xn-icon-button pull-right">
+                        <a href="#"><span class="fa fa-comments"></span></a>
+                        <div class="informer informer-danger">4</div>
+                        <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><span class="fa fa-comments"></span> Messages</h3>                                
+                                <div class="pull-right">
+                                    <span class="label label-danger">4 new</span>
+                                </div>
+                            </div>
+                            <div class="panel-body list-group list-group-contacts scroll" style="height: 200px;">
+                                <a href="#" class="list-group-item">
+                                    <div class="list-group-status status-online"></div>
+                                    <img src="assets/images/users/user2.jpg" class="pull-left" alt="John Doe"/>
+                                    <span class="contacts-title">John Doe</span>
+                                    <p>Praesent placerat tellus id augue condimentum</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="list-group-status status-away"></div>
+                                    <img src="assets/images/users/user.jpg" class="pull-left" alt="Dmitry Ivaniuk"/>
+                                    <span class="contacts-title">Dmitry Ivaniuk</span>
+                                    <p>Donec risus sapien, sagittis et magna quis</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="list-group-status status-away"></div>
+                                    <img src="assets/images/users/user3.jpg" class="pull-left" alt="Nadia Ali"/>
+                                    <span class="contacts-title">Nadia Ali</span>
+                                    <p>Mauris vel eros ut nunc rhoncus cursus sed</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="list-group-status status-offline"></div>
+                                    <img src="assets/images/users/user6.jpg" class="pull-left" alt="Darth Vader"/>
+                                    <span class="contacts-title">Darth Vader</span>
+                                    <p>I want my money back!</p>
+                                </a>
+                            </div>     
+                            <div class="panel-footer text-center">
+                                <a href="pages-messages.html">Show all messages</a>
+                            </div>                            
+                        </div>                        
+                    </li>
+                    <!-- END MESSAGES -->
+                    <!-- TASKS -->
+                    <li class="xn-icon-button pull-right">
+                        <a href="#"><span class="fa fa-tasks"></span></a>
+                        <div class="informer informer-warning">3</div>
+                        <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><span class="fa fa-tasks"></span> Tasks</h3>                                
+                                <div class="pull-right">
+                                    <span class="label label-warning">3 active</span>
+                                </div>
+                            </div>
+                            <div class="panel-body list-group scroll" style="height: 200px;">                                
+                                <a class="list-group-item" href="#">
+                                    <strong>Phasellus augue arcu, elementum</strong>
+                                    <div class="progress progress-small progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+                                    </div>
+                                    <small class="text-muted">John Doe, 25 Sep 2014 / 50%</small>
+                                </a>
+                                <a class="list-group-item" href="#">
+                                    <strong>Aenean ac cursus</strong>
+                                    <div class="progress progress-small progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                                    </div>
+                                    <small class="text-muted">Dmitry Ivaniuk, 24 Sep 2014 / 80%</small>
+                                </a>
+                                <a class="list-group-item" href="#">
+                                    <strong>Lorem ipsum dolor</strong>
+                                    <div class="progress progress-small progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>
+                                    </div>
+                                    <small class="text-muted">John Doe, 23 Sep 2014 / 95%</small>
+                                </a>
+                                <a class="list-group-item" href="#">
+                                    <strong>Cras suscipit ac quam at tincidunt.</strong>
+                                    <div class="progress progress-small">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+                                    </div>
+                                    <small class="text-muted">John Doe, 21 Sep 2014 /</small><small class="text-success"> Done</small>
+                                </a>                                
+                            </div>     
+                            <div class="panel-footer text-center">
+                                <a href="pages-tasks.html">Show all tasks</a>
+                            </div>                            
+                        </div>                        
+                    </li>
+                    <!-- END TASKS -->
+                </ul>
+                <!-- END X-NAVIGATION VERTICAL -->                   
+                
+                <!-- START BREADCRUMB -->
+                <ul class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">UI Kits</a></li>
+                    <li class="active">UI Panels</li>
+                </ul>
+                <!-- END BREADCRUMB -->
+                
+                <!-- PAGE TITLE -->
+                <div class="page-title">                    
+                    <h2><span class="fa fa-arrow-circle-o-left"></span> Panels</h2>
+                </div>
+                <!-- END PAGE TITLE -->                
 
-        </aside>
-        <!--sidebar end-->
-        <!--main content start-->
-        <section class="main-content-wrapper">
-            <section id="main-content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <!--breadcrumbs start -->
-                        <ul class="breadcrumb">
-                            <li><a href="#">Dashboard</a>
-                            </li>
-                            <li>UI Elements</li>
-                            <li class="active">Panels</li>
-                        </ul>
-                        <!--breadcrumbs end -->
-                        <h1 class="h1">Panels</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <p>Simple panel example with no header title or footer. Elit vitae, ridiculus nonummy, vestibulum vivamus cras scelerisque velit magna tincidunt. Torquent amet accumsan, eu maecenas morbi dui eu suspendisse
-                                    <p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Panel title</h3>
-                                <div class="actions pull-right">
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-times"></i>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                Panel content
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Panel title</h3>
-                                <div class="actions pull-right">
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-times"></i>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                Panel content
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- PAGE CONTENT WRAPPER -->
+                <div class="page-content-wrap">
+                
+                    <!-- START PANELS WITH CONTROLS -->
+                    <div class="row">
+                        <div class="col-md-6">
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="panel panel-success">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Panel title</h3>
-                                <div class="actions pull-right">
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-times"></i>
+                            <!-- START PANEL WITH STATIC CONTROLS -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel with static controls</h3>
+                                    <ul class="panel-controls">
+                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>                                            
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
+                                                <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span> Refresh</a></li>
+                                            </ul>                                        
+                                        </li>
+                                        <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                                    </ul>
                                 </div>
+                                <div class="panel-body">
+                                    Controls always available
+                                </div>      
+                                <div class="panel-footer">
+                                    <button class="btn btn-primary pull-right">Button</button>
+                                </div>                            
                             </div>
-                            <div class="panel-body">
-                                Panel content
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Panel title</h3>
-                                <div class="actions pull-right">
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-times"></i>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                Panel content
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            <!-- END PANEL WITH STATIC CONTROLS -->
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="panel panel-warning">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Panel title</h3>
-                                <div class="actions pull-right">
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-times"></i>
+                            <!-- START PANEL WITH HIDDEN CONTROLS -->
+                            <div class="panel panel-success panel-hidden-controls">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel with hidden controls</h3>
+                                    <ul class="panel-controls">
+                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>                                        
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
+                                                <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span> Refresh</a></li>
+                                            </ul>                                        
+                                        </li>
+                                        <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                                    </ul>                                
                                 </div>
+                                <div class="panel-body">
+                                    Use <code>.panel-hidden-controls</code> class on .panel to active this feature.
+                                </div>      
+                                <div class="panel-footer">                                
+                                    <button class="btn btn-primary pull-right">Button</button>
+                                </div>                            
                             </div>
-                            <div class="panel-body">
-                                Panel content
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="panel panel-danger">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Panel title</h3>
-                                <div class="actions pull-right">
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-times"></i>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                Panel content
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Panel title</h3>
-                                <div class="actions pull-right">
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-times"></i>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <p>Elit vitae, ridiculus nonummy, vestibulum vivamus cras scelerisque velit magna tincidunt. Torquent amet accumsan, eu maecenas morbi dui eu suspendisse, neque diam accumsan cras nisl ac ridiculus, erat neque. Wisi enim ullamcorper, dolor eleifend pellentesque, ut nulla libero ante laboriosam elit in, orci nec vitae viverra amet tempor, ut vivamus nec nec tristique. Vitae in suscipit, aliquam turpis, quis risus tortor, sit in ultricies urna sed leo. Non eu imperdiet vitae placerat, donec magna, metus integer imperdiet purus, sed eu. In vehicula fusce est neque, justo nam leo nascetur consectetuer a, nec dolor sit ut quam, in suspendisse ridiculus vitae</p>
-                            </div>
-                            <div class="panel-footer">Panel footer</div>
-                        </div>
-                    </div>
-                </div>
+                            <!-- END PANEL WITH HIDDEN CONTROLS -->
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="panel panel-solid-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Panel title</h3>
-                                <div class="actions pull-right">
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-times"></i>
+                            <!-- START PANEL WITH CONTROL CLASSES -->
+                            <div class="panel panel-warning">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel control classes</h3>
+                                    <ul class="panel-controls">
+                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+                                        <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+                                        <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                                    </ul>                                
+                                </div>
+                                <div class="panel-body">
+                                    Use <code>.panel-collapse</code>,<code>.panel-remove</code>,<code>.panel-refresh</code> classes inside panel to get all features.
+                                </div>      
+                                <div class="panel-footer">                                
+                                    <button class="btn btn-primary pull-right">Button</button>
+                                </div>                            
+                            </div>
+                            <!-- END PANEL WITH CONTROL CLASSES -->
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <!-- START PANEL WITH REFRESH CALLBACKS -->
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel refresh callbacks</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Refresh function has two event callbacks <code>shown</code> and <code>hidden</code>.
+                                </div>
+                                <div class="panel-footer">
+                                    <button class="btn btn-default" id="pc_refresh">Refresh</button>
+                                </div>                                                                                          
+                            </div>
+                            <!-- END PANEL WITH REFRESH CALLBACKS -->
+
+                            <!-- START PANEL WITH COLLAPSE CALLBACKS -->
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel collapse callbacks</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Collapse function has two event callbacks <code>shown</code> and <code>hidden</code>.
+                                </div>
+                                <div class="panel-footer">
+                                    <button class="btn btn-default" id="pc_collapse">Collapse</button>
                                 </div>
                             </div>
-                            <div class="panel-body">
-                                Elit vitae, ridiculus nonummy, vestibulum vivamus cras scelerisque velit magna tincidunt. Torquent amet accumsan, eu maecenas morbi dui eu suspendisse, neque diam accumsan cras nisl ac ridiculus, erat neque. Wisi enim ullamcorper, dolor eleifend pellentesque,
-                            </div>
-                            <div class="panel-footer">Panel footer</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="panel panel-solid-primary">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Panel title</h3>
-                                <div class="actions pull-right">
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-times"></i>
+                            <!-- END PANEL WITH REMOVE CALLBACKS -->
+
+                            <!-- START PANEL WITH REMOVE CALLBACKS -->
+                            <div class="panel panel-danger">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel remove callbacks</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Remove function has two event callbacks <code>before</code> and <code>after</code>.
+                                </div>
+                                <div class="panel-footer">                                
+                                    <button class="btn btn-default" id="pc_remove">Remove</button>
                                 </div>
                             </div>
-                            <div class="panel-body">
-                                Elit vitae, ridiculus nonummy, vestibulum vivamus cras scelerisque velit magna tincidunt. Torquent amet accumsan, eu maecenas morbi dui eu suspendisse, neque diam accumsan cras nisl ac ridiculus, erat neque. Wisi enim ullamcorper, dolor eleifend pellentesque,
-                            </div>
-                            <div class="panel-footer">Panel footer</div>
-                        </div>
+                            <!-- END PANEL WITH REMOVE CALLBACKS -->
+
+                        </div>                    
                     </div>
+                    <!-- END PANELS WITH CONTROLS --> 
+
+                    <!-- START SIMPLE PANELS -->                
+                    <div class="row">                    
+                        <div class="col-md-4">
+
+                            <!-- START PRIMARY PANEL -->
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Primary</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Fusce imperdiet neque at lectus faucibus, eu dapibus nibh imperdiet. Cras porttitor magna ut justo iaculis feugiat. Aliquam semper in dolor nec mattis.</p>
+                                    <p>Duis varius arcu in quam laoreet scelerisque. Aenean porta mi et massa congue, sit amet eleifend dui dignissim. Ut venenatis, tortor ac egestas fringilla, nisi mauris rhoncus nibh, facilisis lacinia mi ligula a est.</p>
+                                </div>
+                                <div class="panel-footer">
+                                    <button class="btn btn-default">Back</button>
+                                    <button class="btn btn-primary pull-right">Submit</button>
+                                </div>                            
+                            </div>
+                            <!-- END PRIMARY PANEL -->
+
+                            <!-- START COLORFUL PANEL -->
+                            <div class="panel panel-colorful">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Colorful</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Fusce imperdiet neque at lectus faucibus, eu dapibus nibh imperdiet. Cras porttitor magna ut justo iaculis feugiat. Aliquam semper in dolor nec mattis.</p>
+                                    <p>Duis varius arcu in quam laoreet scelerisque. Aenean porta mi et massa congue, sit amet eleifend dui dignissim. Ut venenatis, tortor ac egestas fringilla, nisi mauris rhoncus nibh, facilisis lacinia mi ligula a est.</p>
+                                </div>
+                                <div class="panel-footer">
+                                    <button class="btn btn-default">Back</button>
+                                    <button class="btn btn-primary pull-right">Submit</button>
+                                </div>                            
+                            </div>
+                            <!-- END COLORFUL PANEL -->
+                        </div>
+
+                        <div class="col-md-4">  
+
+                            <!-- START SUCCESS PANEL -->
+                            <div class="panel panel-success">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Success</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Fusce imperdiet neque at lectus faucibus, eu dapibus nibh imperdiet. Cras porttitor magna ut justo iaculis feugiat. Aliquam semper in dolor nec mattis.</p>
+                                    <p>Duis varius arcu in quam laoreet scelerisque. Aenean porta mi et massa congue, sit amet eleifend dui dignissim. Ut venenatis, tortor ac egestas fringilla, nisi mauris rhoncus nibh, facilisis lacinia mi ligula a est.</p>
+                                </div>      
+                                <div class="panel-footer">
+                                    <button class="btn btn-default">Back</button>
+                                    <button class="btn btn-primary pull-right">Submit</button>
+                                </div>                            
+                            </div>            
+                            <!-- END SUCCESS PANEL -->
+
+                            <!-- START INFO PANEL -->
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">lorem ipsum dolor</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Fusce imperdiet neque at lectus faucibus, eu dapibus nibh imperdiet. Cras porttitor magna ut justo iaculis feugiat. Aliquam semper in dolor nec mattis.</p>
+                                    <p>Duis varius arcu in quam laoreet scelerisque. Aenean porta mi et massa congue, sit amet eleifend dui dignissim. Ut venenatis, tortor ac egestas fringilla, nisi mauris rhoncus nibh, facilisis lacinia mi ligula a est.</p>
+                                </div>                            
+                                <div class="panel-footer">
+                                    <button class="btn btn-default">Back</button>
+                                    <button class="btn btn-primary pull-right">Submit</button>
+                                </div>                              
+                            </div>
+                            <!-- END INFO PANEL -->
+
+                        </div>
+                        <div class="col-md-4">      
+
+                            <!-- START WARNING PANEL -->
+                            <div class="panel panel-warning">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Warning</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Fusce imperdiet neque at lectus faucibus, eu dapibus nibh imperdiet. Cras porttitor magna ut justo iaculis feugiat. Aliquam semper in dolor nec mattis.</p>
+                                    <p>Duis varius arcu in quam laoreet scelerisque. Aenean porta mi et massa congue, sit amet eleifend dui dignissim. Ut venenatis, tortor ac egestas fringilla, nisi mauris rhoncus nibh, facilisis lacinia mi ligula a est.</p>
+                                </div>     
+                                <div class="panel-footer">
+                                    <button class="btn btn-default">Back</button>
+                                    <button class="btn btn-primary pull-right">Submit</button>
+                                </div>                            
+                            </div>                        
+                            <!-- END DEFAULT PANEL -->
+
+                            <!-- START DANGER PANEL -->
+                            <div class="panel panel-danger">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Danger</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Fusce imperdiet neque at lectus faucibus, eu dapibus nibh imperdiet. Cras porttitor magna ut justo iaculis feugiat. Aliquam semper in dolor nec mattis.</p>
+                                    <p>Duis varius arcu in quam laoreet scelerisque. Aenean porta mi et massa congue, sit amet eleifend dui dignissim. Ut venenatis, tortor ac egestas fringilla, nisi mauris rhoncus nibh, facilisis lacinia mi ligula a est.</p>
+                                </div>     
+                                <div class="panel-footer">
+                                    <button class="btn btn-default">Back</button>
+                                    <button class="btn btn-primary pull-right">Submit</button>
+                                </div>                            
+                            </div>   
+                            <!-- END DEFAULT PANEL -->
+
+                        </div>
+                    </div>  
+                    <!-- END SIMPLE PANELS -->                
+                
                 </div>
+                <!-- PAGE CONTENT WRAPPER -->                                
+            </div>    
+            <!-- END PAGE CONTENT -->
+        </div>
+        <!-- END PAGE CONTAINER -->
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="panel panel-solid-info">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Panel title</h3>
-                                <div class="actions pull-right">
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-times"></i>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                Elit vitae, ridiculus nonummy, vestibulum vivamus cras scelerisque velit magna tincidunt. Torquent amet accumsan, eu maecenas morbi dui eu suspendisse, neque diam accumsan cras nisl ac ridiculus, erat neque. Wisi enim ullamcorper, dolor eleifend pellentesque,
-                            </div>
-                            <div class="panel-footer">Panel footer</div>
+        <!-- MESSAGE BOX-->
+        <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+            <div class="mb-container">
+                <div class="mb-middle">
+                    <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+                    <div class="mb-content">
+                        <p>Are you sure you want to log out?</p>                    
+                        <p>Press No if youwant to continue work. Press Yes to logout current user.</p>
+                    </div>
+                    <div class="mb-footer">
+                        <div class="pull-right">
+                            <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
+                            <button class="btn btn-default btn-lg mb-control-close">No</button>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="panel panel-solid-success">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Panel title</h3>
-                                <div class="actions pull-right">
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-times"></i>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                Elit vitae, ridiculus nonummy, vestibulum vivamus cras scelerisque velit magna tincidunt. Torquent amet accumsan, eu maecenas morbi dui eu suspendisse, neque diam accumsan cras nisl ac ridiculus, erat neque. Wisi enim ullamcorper, dolor eleifend pellentesque,
-                            </div>
-                            <div class="panel-footer">Panel footer</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="panel panel-solid-warning">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Panel title</h3>
-                                <div class="actions pull-right">
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-times"></i>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                Elit vitae, ridiculus nonummy, vestibulum vivamus cras scelerisque velit magna tincidunt. Torquent amet accumsan, eu maecenas morbi dui eu suspendisse, neque diam accumsan cras nisl ac ridiculus, erat neque. Wisi enim ullamcorper, dolor eleifend pellentesque,
-                            </div>
-                            <div class="panel-footer">Panel footer</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="panel panel-solid-danger">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Panel title</h3>
-                                <div class="actions pull-right">
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-times"></i>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                Elit vitae, ridiculus nonummy, vestibulum vivamus cras scelerisque velit magna tincidunt. Torquent amet accumsan, eu maecenas morbi dui eu suspendisse, neque diam accumsan cras nisl ac ridiculus, erat neque. Wisi enim ullamcorper, dolor eleifend pellentesque,
-                            </div>
-                            <div class="panel-footer">Panel footer</div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </section>
-        </section>
-        <!--main content end-->
-        <!--sidebar right start-->
-        <aside class="sidebarRight">
-            <div id="rightside-navigation">
-                <div class="sidebar-heading"><i class="fa fa-user"></i> Contacts</div>
-                <div class="sidebar-title">online</div>
-                <div class="list-contacts">
-                    <a href="javascript:void(0)" class="list-item">
-                        <div class="list-item-image">
-                            <img src="assets/img/avatar.gif" class="img-circle">
-                        </div>
-                        <div class="list-item-content">
-                            <h4>James Bagian</h4>
-                            <p>Los Angeles, CA</p>
-                        </div>
-                        <div class="item-status item-status-online"></div>
-                    </a>
-                    <a href="javascript:void(0)" class="list-item">
-                        <div class="list-item-image">
-                            <img src="assets/img/avatar1.gif" class="img-circle">
-                        </div>
-                        <div class="list-item-content">
-                            <h4>Jeffrey Ashby</h4>
-                            <p>New York, NY</p>
-                        </div>
-                        <div class="item-status item-status-online"></div>
-                    </a>
-                    <a href="javascript:void(0)" class="list-item">
-                        <div class="list-item-image">
-                            <img src="assets/img/avatar2.gif" class="img-circle">
-                        </div>
-                        <div class="list-item-content">
-                            <h4>John Douey</h4>
-                            <p>Dallas, TX</p>
-                        </div>
-                        <div class="item-status item-status-online"></div>
-                    </a>
-                    <a href="javascript:void(0)" class="list-item">
-                        <div class="list-item-image">
-                            <img src="assets/img/avatar3.gif" class="img-circle">
-                        </div>
-                        <div class="list-item-content">
-                            <h4>Ellen Baker</h4>
-                            <p>London</p>
-                        </div>
-                        <div class="item-status item-status-away"></div>
-                    </a>
-                </div>
-
-                <div class="sidebar-title">offline</div>
-                <div class="list-contacts">
-                    <a href="javascript:void(0)" class="list-item">
-                        <div class="list-item-image">
-                            <img src="assets/img/avatar4.gif" class="img-circle">
-                        </div>
-                        <div class="list-item-content">
-                            <h4>Ivan Bella</h4>
-                            <p>Tokyo, Japan</p>
-                        </div>
-                        <div class="item-status"></div>
-                    </a>
-                    <a href="javascript:void(0)" class="list-item">
-                        <div class="list-item-image">
-                            <img src="assets/img/avatar5.gif" class="img-circle">
-                        </div>
-                        <div class="list-item-content">
-                            <h4>Gerald Carr</h4>
-                            <p>Seattle, WA</p>
-                        </div>
-                        <div class="item-status"></div>
-                    </a>
-                    <a href="javascript:void(0)" class="list-item">
-                        <div class="list-item-image">
-                            <img src="assets/img/avatar6.gif" class="img-circle">
-                        </div>
-                        <div class="list-item-content">
-                            <h4>Viktor Gorbatko</h4>
-                            <p>Palo Alto, CA</p>
-                        </div>
-                        <div class="item-status"></div>
-                    </a>
                 </div>
             </div>
-        </aside>
-        <!--sidebar right end-->
-    </section>
-    <!--Global JS-->
-    <script src="assets/js/jquery-1.10.2.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/plugins/waypoints/waypoints.min.js"></script>
-    <script src="assets/plugins/nanoScroller/jquery.nanoscroller.min.js"></script>
-    <script src="assets/js/application.js"></script>
+        </div>
+        <!-- END MESSAGE BOX-->
 
-</body>
+        <!-- START PRELOADS -->
+        <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+        <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+        <!-- END PRELOADS -->                      
 
+    <!-- START SCRIPTS -->
+        <!-- START PLUGINS -->
+        <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>        
+        <!-- END PLUGINS -->
+        
+        <!-- THIS PAGE PLUGINS -->
+        <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
+        <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+        <!-- END PAGE PLUGINS -->        
+        
+        <!-- START TEMPLATE -->
+        <script type="text/javascript" src="js/settings.js"></script>
+        
+        <script type="text/javascript" src="js/plugins.js"></script>        
+        <script type="text/javascript" src="js/actions.js"></script>        
+        <!-- END TEMPLATE -->
+        
+        <script>
+            $("#pc_refresh").click(function(){                                        
+                function p_refresh_shown(){
+                    alert("shown");
+                    panel_refresh($("#pc_refresh").parents(".panel"),"hidden",function(){alert("hidden")});
+                }
+                panel_refresh($("#pc_refresh").parents(".panel"),"shown",p_refresh_shown);
+
+            });                         
+            
+            $("#pc_collapse").click(function(){                                        
+                function p_collapse_hidden(){                                            
+                    alert("hidden");                                            
+                    panel_collapse($("#pc_collapse").parents(".panel"),"shown",function(){alert('shown')});
+                }
+                panel_collapse($("#pc_collapse").parents(".panel"),"hidden",p_collapse_hidden);
+            });           
+            
+            $("#pc_remove").click(function(){                                        
+                function p_remove_before(){
+                    alert("before");
+                    panel_remove($("#pc_remove").parents(".panel"),"after",function(){alert("after")});
+                }
+                panel_remove($("#pc_remove").parents(".panel"),"before",p_remove_before);
+
+            });                 
+        </script>         
+        
+    <!-- END SCRIPTS -->         
+        
+    </body>
 </html>
+
+
+
+
+
+
